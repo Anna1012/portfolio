@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시매쓰 입학테스트 예약하기</title>
+
+    <meta name="description" content="수학 학습 현황과 잠재력 진단 받으세요.">
+    <meta name="keywords" content="시매쓰, 사고력수학, 진단평가, 진단검사, 테스트, 입학테스트, 레벨테스트, 입테, 레테, 수학학원, 교구, 수학, 학습, 영재교육원, 자기주도학습, 수학경시대회, 유아교육, 올림피아드, 수업, 중등수학, 유아수학, 유아교구, 수학잘하는법, 숫자공부, 창의수학, 교재교구, 수학공부법, 수학체험, 토론수업, 수학공부, 수학선행, 수학프랜차이즈, 사고력수학학원, 학습법, 초등학생학원, 수학기초, 창의력수학, 초등수학교구, 수학개념, 영재테스트, 수학교육, 초등사고력수학">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="시매쓰 입학테스트 예약하기">
+    <meta property="og:title" content="시매쓰 입학테스트 예약하기">
+    <meta property="og:image" content="/image/kakao.jpg">
+    <meta property="og:description" content="수학 학습 현황과 잠재력 진단 받으세요.">
+    <meta property="og:url" content="">
+
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- 웹폰트 -->
+    <link href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="./script/main.js"></script>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="bottom-btn" onclick="location.href='./index_05.html';">
+            <span>조회하기</span>
+        </div>
+        <div class="reserv-wrap">
+            <header>
+                <div class="header-left">
+                    <div class="pc-logo" onclick="location.href='./index_01.html';">
+                        <img src="./image/logo_cmath_basic.png" alt="홈으로가기">
+                    </div>
+                    <div class="icon-wrap">
+                        <img src="./image/icon_chevronleft_b_15pt.png" alt="뒤로가기">
+                    </div>
+                </div>
+                <div class="header-center">
+                    예약 조회
+                </div>
+                <div class="header-right">
+                    <div class="icon-wrap">
+                        <img src="./image/icon_home_b_15pt.png" alt="홈으로가기">
+                    </div>
+                </div>
+            </header>
+            <div class="nav">예약 조회</div>
+            <div class="empty-header"></div>
+            <div class="aca-reserv">
+                <h2 class="form-label">예약정보 입력</h2>
+                <div class="input-01--number input-number-container">
+                    <label class="input-label">신청 번호</label>
+                    <!-- input-wrap에 err만 붙이면 스타일 바뀝니다. -->
+                    <div class="input-wrap err">
+                        <input type="text" 
+                            placeholder="신청 시 발급받은 번호 10자리"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                            maxlength="10"
+                        >
+                        <span>신청 번호를 확인해주세요.</span>
+                    </div>
+                </div>
+                <p class="cancel-info">
+                    * 예약 취소는 반드시 예약한 학원에 전화 주세요.
+                </p>
+            </div>
+            <footer>
+                서울특별시 서초구 강남대로93길 9(잠원동)<br class="mo"/> ㈜오메가포인트<br/>
+                대표이사 이충기 | 사업자등록번호: 114-86-01317<br/>통신판매업신고: 서초 0331호 | 전화: 02-3446-9660 <br class="mo"/><span class="pc"> | </span> 팩스: 02-3446-9663<br/>
+                Copyright 2023. ㈜오메가포인트 all rights reserved.
+            </footer>
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "월" + "</span>";
+            },
+        },
+        });
+</script>
+</body>
+
+</html>
