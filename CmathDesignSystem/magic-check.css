@@ -1,0 +1,11 @@
+:root {
+  --main-color: #567482;
+  --point-color: #E60012;
+  --checkedDisable-color: #fcc9ce;
+  --nothing-color: #ccc;
+}
+body { font-family: 'Noto Sans KR', sans-serif; }
+* { box-sizing: border-box; }
+
+
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cmath Design System website</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="../script/webpage.js"></script>
+
+    <!--jquery date ui-->
+    <link rel="stylesheet" href="../style/jquery-ui.theme.min.css" />
+    <script src="../script/date.js"></script>
+
+    <link rel="stylesheet" href="../style/CmathDesignSystem.css" />
+    <link rel="stylesheet" href="../style/CmathDesignSystem_website.css" />
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+      $(function () {
+        $("#datepicker").datepicker();
+      });
+    </script>
+
+    <script src="../script/script.js"></script>
+    <script type="text/javascript">
+      // 안드로이드 우측 버튼 비활성
+      $(document).bind("contextmenu", function (e) {
+        return false;
+      });
+    </script>
+  </head>
+  <body>
+    <header class="header-top">
+      <nav class="gnb">
+        <div class="inner">
+          <ul>
+            <li><a href="#">환경 및 설정</a></li>
+            <li><a href="#">HTML 가이드</a></li>
+            <li><a href="#">CSS 가이드</a></li>
+            <li><a href="#">파일/폴더명</a></li>
+            <li><a href="#" class="on">디자인시스템</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="inner contents">
+      <header class="header-left">
+        <nav class="snb">
+          <ul>
+            <li>
+              <span OnClick="location.href='../CmathDesignSystem_webpage.html'">Logo</span>
+              <ul>
+                <li>시매쓰 로고</li>
+                <li>시매쓰 출판 로고</li>
+                <li>시매쓰 학원 로고</li>
+              </ul>
+            </li>
+            <li><span OnClick="location.href='../uxwritings/CmathDesignSystem_webpage.html'">UX Writings</span></li>
+            <li>
+              <span OnClick="location.href='../colors/CmathDesignSystem_webpage.html'">Colors</span>
+              <ul>
+                <li>시매쓰 메인 색상</li>
+                <li>시매쓰 서브 색상</li>
+                <li>다크모드</li>
+              </ul>
+            </li>
+            <li>
+              <span OnClick="location.href='../components/CmathDesignSystem_webpage.html'">Components</span>
+              <ul>
+                <li>Buttons</li>
+                <li>Dropdowns</li>
+                <li>Tabs</li>
+                <li>Form</li>
+                <li>Table</li>
+                <li>Dialog</li>
+                <li>Tag</li>
+                <li>Pagenation</li>
+                <li>Badges</li>
+              </ul>
+            </li>
+            <li><span  class="on">Typography</span></li>
+            <li><span OnClick="location.href='../icon/CmathDesignSystem_webpage.html'">Icon</span></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="parts-container">
+        <section class="part-wrap">
+          <div class="part">
+            <div class="typo-01">
+              <h1 class="part-title-01">타이포그래피</h1>
+              <h5 class="part-text">시매쓰에서 제목 폰트로 콘텐츠가 잘 전달되면서 뚜렷한 인상의 직선의 특징을 가지고 있는 나눔 스퀘어를 사용합니다.<br/>
+                본문 폰트로 가독성이 높으며 깔끔한 Noto Sans KR을 사용합니다.</h5>
+              <h1 class="part-title-02">Overview</h1>
+              <div class="typo-container">
+                <div>
+                  <p class="img-caption">제목</p>
+                  <div class="typo-wrap">
+                    <h3>나눔스퀘어</h3>
+                  </div>
+                  <button class="cmath-font-down" onclick="window.open('https://hangeul.naver.com/2017/nanum')">
+                    <p>Nanum Square DOWNLOAD</p>
+                    <img src="../img/w_15px/icon_arrowright_w_15pt.png">
+                  </button>
+                </div>
+                <div>
+                  <p class="img-caption">본문</p>
+                  <div class="typo-wrap">
+                    <h3>Noto Sans KR</h3>
+                  </div>
+                  <button class="cmath-font-down" onclick="window.open('https://fonts.google.com/noto/specimen/Noto+Sans+KR?subset=korean')">
+                    <p>Noto Sans DOWNLOAD</p>
+                    <img src="../img/w_15px/icon_arrowright_w_15pt.png">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="typo-02">
+              <h1 class="part-title-02">Font Weight</h1>
+              <h5 class="part-text">폰트의 두께는 웹 로딩시간을 고려해 최대 3개를 사용합니다.</h5>
+              <div class="typo-container">
+                <div class="typo-wrap">
+                  <h2>나눔스퀘어<br/><span>NanumSquare</span></h2>
+                  <table>
+                    <tr>
+                      <td>400</td>
+                      <td class="regular">Regular</td>
+                    </tr>
+                    <tr>
+                      <td>700</td>
+                      <td class="bold">Bold</td>
+                    </tr>
+                    <tr>
+                      <td>800</td>
+                      <td class="ebold">ExtraBold</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="typo-wrap">
+                  <h2>노토산스<br/><span>Noto Sans KR</span></h2>
+                  <table>
+                    <tr>
+                      <td>400</td>
+                      <td class="regular">Reqular</td>
+                    </tr>
+                    <tr>
+                      <td>500</td>
+                      <td class="medium">Medium</td>
+                    </tr>
+                    <tr>
+                      <td>700</td>
+                      <td class="bold">Bold</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+    </div>
+  </body>
+</html>
