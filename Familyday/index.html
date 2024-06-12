@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시매쓰 가정의 달 테스트 이벤트</title>
+    <meta name="description" content="시매쓰에서 입학 진단평가 받고 응모하신 분께 아이패드, 에어랩, 케이크, 치킨, 아메리카노를 쏩니다! 5세부터 중3까지 영재원, 경시 대비는 사고력 수학 시매쓰에서!">
+    <meta name="keywords" content="시매쓰, 사고력수학, 진단평가, 테스트, 입학테스트, 레벨테스트, 입테, 레테, 이벤트, 수학학원, 교구, 수학, 학습, 영재교육원, 자기주도학습, 수학경시대회, 유아교육, 올림피아드, 수업, 공부방창업, 중등수학, 유아수학, 유아교구, 수학잘하는법, 숫자공부, 창의수학, 교재교구, 수학공부법, 수학체험, 토론수업, 학원창업, 수학공부, 수학선행, 수학프랜차이즈, 사고력수학학원, 학습법, 초등학생학원, 수학기초, 창의력수학, 초등수학교구, 수학개념, 영재테스트, 수학교육, 초등사고력수학, 공부방창업조건, 초등공부방, 교습소창업, 학원설립, 프랜차이즈사업, 수학교습소, 창업">
+
+    <!-- iphone number -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- ogtag -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="시매쓰 가정의 달 테스트 이벤트" />
+    <meta property="og:title" content="시매쓰 테스트받고 선물 받자!" />
+    <meta property="og:description" content="아이패드, 에어랩 등 경품이 팡팡!" />
+    <meta property="og:image" content="./img/familyday_kakao.png" />
+    <meta property="og:url" content="" />
+
+    <!-- jquery는 scrollmagic 위에 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- scroll magic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- scroll magic 버그 잡아주기-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+
+    
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="stylesheet" href="./style/style.css">
+
+    
+    <script defer src="./script/main.js"></script>
+</head>
+<body>
+    <div class="familyday-event-container">
+        <div class="cmath-text-main">
+            <div class="bottom-btn left-btn" onclick="location.href='./check.html';"><p>조회하기</p></div>
+            <div class="bottom-btn right-btn"><p>응모하기</p></div>
+        </div>
+         <!-- 응모 성공일 경우 className에 suc추가, 실패할 경우 fail추가 -->
+        <div class="snackbar suc">
+            <div class="snackbar-icon"></div>
+            <p>이벤트에 응모되었습니다.</p>
+            <!-- 나이 오류 : '응시자 나이'를 다시 한번 확인해 주세요.
+            핸드폰 번호 오류 : 핸드폰 번호를 다시 한번 확인해 주세요.
+            개인정보 동의 미선택 : '개인정보 수집 이용' 체크란을 확인해 주세요. -->
+            <div class="icon-wrap close-btn">
+                <img src="./img/icon_close_w_15pt.png" alt="닫기">
+            </div>
+        </div>
+        <div class="popup-wrap-info">
+            <!-- popup-wrap 바로 밑에있는 div에 show 클래스를 넣어주면 팝업이 보입니다. -->
+            <div class="popup">
+                <div class="icon-wrap close-btn">
+                    <img src="./img/icon_close_b_15pt.png" alt="닫기">
+                </div>
+                <h2>개인정보 수집•이용에 대한 동의 </h2>
+                <div class="scroll-wrap">
+                    <p>개인정보보호법에 따라 (주)오메가포인트는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부 시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.</p>
+                    <ul class="info-list">
+                        <li class="list-item">1. 수집하는 개인정보
+                            <ul class="info-list">
+                                <li class="list-item-sub">필수항목 : 휴대전화 번호</li>
+                            </ul>
+                        </li>
+                        <li class="list-item">2. 수집한 개인정보의 이용
+                            <ul class="info-list">
+                                <li class="list-item-sub">
+                                    회사는 이벤트 응모를 확인하고 상품을 발송하기 위한 목적으로만 개인정보를 이용합니다. 단, 작성하신 나이와 후기는 시매쓰 홍보를 위해 2차 활용될 수 있습니다.
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-item">3. 개인정보의 보관기간
+                            <ul class="info-list">
+                                <li class="list-item-sub">
+                                    회사는 원칙적으로 이용자의 개인정보를 서비스 종료 시 지체없이 파기하고 있습니다.
+                                </li>
+                                <li class="list-item-sub">
+                                    단, 이용자에게 개인정보 보관기간에 대해 별도의 동의를 얻은 경우, 또는 법령에서 일정 기간 정보보관 의무를 부과하는 경우에는 해당 기간 동안 개인정보를 안전하게 보관합니다.
+                                </li>
+                                <li class="list-item-sub">
+                                    서비스에 대한 원활한 제공을 위해 이벤트 마감일로부터 6개월 보관
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-item">4. 개인정보 수집 및 이용 동의를 거부할 권리
+                            <ul class="info-list">
+                                <li class="list-item-sub">
+                                    이용자는 개인정보의 수집 및 이용 동의를 거부할 권리가 있습니다. 이벤트 응모 시 수집하는 최소한의 개인정보, 즉, 필수 항목에 대한 수집 및 이용 동의를 거부하실 경우, 이벤트 응모가 어려울 수 있습니다.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="closed close-btn">확인</div>
+            </div>
+        </div>
+        <div class="popup-wrap-promotion">
+            <div class="popup">
+                <div class="icon-wrap close-btn">
+                    <img src="./img/icon_close_b_15pt.png" alt="닫기">
+                </div>
+                <h2>프로모션 정보 수신 동의</h2>
+                <p>개인정보보호법에 따라 (주)오메가포인트는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부 시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.</p>
+                <div class="closed close-btn">확인</div>
+            </div>
+        </div>
+        <div class="popup-wrap-event">
+            <div class="event">
+                <div class="icon-wrap close-btn">
+                    <img src="./img/icon_close_b_15pt.png" alt="닫기">
+                </div>
+                <h4>또 다른 이벤트는 어때요?</h4>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/banner_1.png" alt="">
+                            <div class="banner-link">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner_2.png" alt="">
+                            <div class="banner-link">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner_3.png" alt="">
+                            <div class="banner-link">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner_4.png" alt="">
+                            <div class="banner-link">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="banner-btm">
+                    <div class="banner-wrap">
+                        <div class="banner-text">
+                            <h2>경험의 우주, 시매쓰</h2>
+                            <p>친구가 선생님이 되는, 세상이 교과서가 되는 상상력을 자극하며 표현이 자유로운 교육 지금은 변화가 필요합니다.</p>
+                        </div>
+                        <div class="whale"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="section-main">
+            <div class="ani-01"></div>
+            <div class="ani-02"></div>
+            <div class="point-01 scrollable skrollable-between" data-0="transform: translate3d(0px, 0px, 0px);" data-end="transform: translate3d(0px, -500px, 0px);"></div>
+            <div class="point-02 scrollable skrollable-between" data-0="transform: translate3d(0px, 0px, 0px);" data-end="transform: translate3d(0px, -300px, 0px);"></div>
+            <div class="balloon-01 scrollable skrollable-between" data-0="transform: translate3d(0px, 100px, 0px);" data-end="transform: translate3d(0px, -700px, 0px);"></div>
+            <div class="title-wrap">
+                <div class="event-title">
+                    <div class="logo-image"></div>
+                    <div class="event-suv">
+                        <span class="blind">
+                            가정의달 이벤트
+                        </span>
+                    </div>
+                </div>
+                <div class="sub-title">
+                    
+                    <div class="for-who">
+                        <span class="blind">
+                            시매쓰에 입학진단 받은 분들께
+                        </span>
+                    </div>
+                </div>
+                <div class="main-title">
+                    <div class="gift-title">
+                        <h3><span class="blind">특별한 선물을</span></h3>
+                        <h2><span class="blind">쏩니다!</span></h2>
+                    </div>
+                </div>
+                <div class="event-date">
+                    <span class="blind">05.04(목)-05.24(수)</span>
+                </div>
+            </div>
+            <div class="scroll-down"></div>
+        </div>
+        <div class="section-request">
+            <img class="cloud-mobile" src="./img/cloud.png" alt="">
+            <div class="cloud-pc"></div>
+            <div class="balloon-02 scrollable skrollable-between" data-0="transform: translate3d(0px, 100px, 0px);" data-end="transform: translate3d(0px, -700px, 0px);"></div>
+            <div class="balloon-03 scrollable skrollable-between" data-0="transform: translate3d(0px, 150px, 0px);" data-end="transform: translate3d(0px, -200px, 0px);"></div>
+            <div class="form-wrap">
+                <div class="container-select">
+                    <h2>원하는 경품에 투표해 주세요!</h2>
+                    <p>* 당첨되는 상품과는 연관이 없습니다.</p>
+
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide select">
+                                <div for="ipad" class="event-ipad">
+                                    <div class="numb">2명</div>
+                                    <div class="gift-01"></div>
+                                    <p class="gift-name">아이패드</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div for="dyson-airwrap" class="event-airwrap">
+                                    <div class="numb">1명</div>
+                                    <div class="gift-02"></div>
+                                    <p class="gift-name">다이슨 헤어랩</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div for="dyson-hair" class="event-hair">
+                                    <div class="numb">1명</div>
+                                    <div class="gift-03"></div>
+                                    <p class="gift-name">다이슨 헤어드라이어</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div for="cake" class="event-cake">
+                                    <div class="numb">30명</div>
+                                    <div class="gift-04"></div>
+                                    <p class="gift-name">뚜레쥬르 케이크</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div for="chicken" class="event-chicken">
+                                    <div class="numb">30명</div>
+                                    <div class="gift-05"></div>
+                                    <p class="gift-name">BHC 치킨</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div for="coffee" class="event-coffee">
+                                    <div class="numb">100명</div>
+                                    <div class="gift-06"></div>
+                                    <p class="gift-name">스타벅스 아메리카노</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="pc-choice">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide select">
+                                <div for="ipad" class="event-ipad">
+                                    <div class="numb">2명</div>
+                                    <div class="gift-01"></div>
+                                    <p class="gift-name">아이패드</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div for="dyson-airwrap" class="event-airwrap">
+                                    <div class="numb">1명</div>
+                                    <div class="gift-02"></div>
+                                    <p class="gift-name">다이슨 헤어랩</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div for="dyson-hair" class="event-hair">
+                                    <div class="numb">1명</div>
+                                    <div class="gift-03"></div>
+                                    <p class="gift-name">다이슨 헤어드라이어</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div for="cake" class="event-cake">
+                                    <div class="numb">30명</div>
+                                    <div class="gift-04"></div>
+                                    <p class="gift-name">뚜레쥬르 케이크</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div for="chicken" class="event-chicken">
+                                    <div class="numb">30명</div>
+                                    <div class="gift-05"></div>
+                                    <p class="gift-name">BHC 치킨</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div for="coffee" class="event-coffee">
+                                    <div class="numb">100명</div>
+                                    <div class="gift-06"></div>
+                                    <p class="gift-name">스타벅스 아메리카노</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="container-input">
+                        <h3 class="form-title">신청정보 입력</h3>
+                        <div class="input-01--text input-text-container">
+                            <label>입학 진단평가 응시자 나이</label>
+                            <div class="input-wrap">
+                                <select class="drop mobile" required>
+                                    <option value="" disabled="" selected="">나이를 선택하세요.</option>
+                                    <option value="5">5살</option>
+                                    <option value="6">6살</option>
+                                    <option value="7">7살</option>
+                                    <option value="8">8살</option>
+                                    <option value="9">9살</option>
+                                    <option value="10">10살</option>
+                                    <option value="11">11살</option>
+                                    <option value="12">12살</option>
+                                    <option value="13">13살</option>
+                                    <option value="14">14살</option>
+                                    <option value="15">15살</option>
+                                    <option value="16">16살</option>
+                                </select>
+                                <span>나이를 선택해 주세요.</span>
+                            </div>
+                        </div>
+                        
+                        <div class="input-01--number input-number-container">
+                            <label class="input-label">전화번호</label>
+                            <div class="authenticate">
+                                <!-- iput wrap에 'err' class를 넣으면 span 문구가 생겨요 -->
+                                <div class="input-wrap">
+                                    <input type="text" oninput="autoHyphen(this)" maxlength="13" placeholder="상품 수령 번호">
+                                    <!-- <span>전화번호를 입력하세요.</span> -->
+                                </div>
+                                <!-- 인증번호 버튼 비활성화: .auto-btn에 opacity: 0.3; -->
+                                <div class="auth-btn send">인증번호 전송</div>
+                            </div>
+                        </div>
+                        <div class="input-01--number input-number-container" id="code">
+                            <div class="authenticate">
+                                <div class="input-wrap">
+                                    <input type="text" placeholder="인증코드 입력">
+                                    <span>인증코드를 다시 한번 확인해 주세요.</span>
+                                </div>
+                                <div class="auth-btn">인증하기</div>
+                            </div>
+                        </div>
+                        <div class="input-01--text input-text-container">
+                            <div class="input-wrap">
+                                <label class="input-label">상담후기</label>
+                                <form>
+                                    <textarea name="revies" id="" style="resize:none;" placeholder="자유롭게 입력하세요."></textarea>
+                                </form>
+                                <span>상담후기를 입력해 주세요.</span>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="agree">
+                        <div class="agree-all">
+                            <input class="magic-checkbox" type="checkbox" name="layout" id="1">
+                            <label for="1">전체 동의하기</label>
+                        </div>
+                        <div class="check-agree">
+                            <div class="agree-info">
+                                <input class="magic-checkbox" type="checkbox" name="layout" id="2">
+                                <label for="2">개인정보 수집 이용에 대한 동의<span> (필수)</span></label>
+                                <p>보기</p>
+                            </div>
+                            <div class="agree-promotion">
+                                <input class="magic-checkbox" type="checkbox" name="layout" id="3">
+                                <label for="3">프로모션 정보 수신 동의<span> (선택)</span></label>
+                                <p>보기</p>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        서울특별시 서초구 강남대로93길 9(잠원동)<br class="pc"/> ㈜오메가포인트<br/>대표이사 이충기 | 사업자등록번호 114-86-01317<br/>통신판매업신고 서초 0331호 전화 : 02-3446-9660 | 팩스 02-3446-9663 <br/>Copyright ⓒ <span class="this-year"></span>OMEGA POINT Inc. All Right Reserved.
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./script/skrollr.js"></script>
+    
+</body>
+</html>
