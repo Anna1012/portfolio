@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="./style/CmathDesignSystem.css">
+    <link rel="stylesheet" href="./style/Register.css">
+
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="./script/script.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="icon-back-b icon-24-container icons">
+            <img src="./img/b_15px/icon_chevronleft_b_15pt.png" alt="뒤로가기">
+        </div>
+        <img src="./img/logo/logo_cmath_pub.png" alt="시매쓰출판로고">
+    </header>
+    <!-- 수정 시, 신청하기 버튼이 수정하기 버튼으로 -->
+    <div class="bottom-btns">
+      <div class="bottom-wrap">
+        <div class="submit">신청하기</div>
+      </div>
+    </div>
+    <form name="registerForm">
+        <div>
+          <h2 class="form-title submit-info">신청정보 입력</h2>
+          <div class="input-01--text input-text-container">
+            <label class="input-label">학부모 성함</label>
+            <div class="input-wrap">
+              <input type="text" name="name" autocomplete="off"/>
+            </div>
+          </div>
+          <div class="input-01--number input-number-container">
+            <label class="input-label">연락처</label>
+            <div class="input-wrap phone-num">
+              <input type="text" name="phone" autocomplete="off" oninput="autoHyphen(this)" maxlength="13"/>
+              <button class="phone-auth">인증번호 전송</button>
+            </div>
+            <div class="input-contain">
+              <div class="input-wrap">
+                <input type="number" name="phone" autocomplete="off"/>
+              </div>
+              <button class="btn btn-solid-01">확인</button>
+            </div>
+            
+          </div>
+          <div class="input-01--text input-text-container">
+            <label class="input-label">시매쓰출판 공식 카페 닉네임</label>
+            <div class="input-wrap">
+              <input type="text" name="nickname" autocomplete="off"/>
+            </div>
+          </div>
+        </div>
+      
+        <h2 class="form-title">자녀정보 입력</h2>
+        <div class="children-container">
+          <div class="children-wrap">
+            <h3 class="children-count">자녀1</h3>
+            <div class="icon-wrap">
+              <img src="./img/b_15px/icon_close_b_15pt.png" alt="삭제">
+            </div>
+            <div class="input-01--text input-text-container">
+              <label class="input-label">학년(나이)</label>
+              <select class="drop mobile" required name="" id="">
+                <option value="" disabled selected>선택해 주세요</option>
+                <option value="1">6세</option>
+                <option value="2">7세</option>
+                <option value="3">1학년</option>
+                <option value="4">2학년</option>
+                <option value="5">3학년</option>
+              </select>
+            </div>
+            <div class="book-wrap">
+              <div class="input-01--text input-text-container">
+                <label class="input-label">교재 선택</label>
+                <select class="drop mobile" required name="" id="">
+                  <option value="" disabled selected>학습할 교재를 선택해 주세요</option>
+                  <option value="1">빨강연산A</option>
+                  <option value="2">빨강연산B</option>
+                  <option value="3">빨강연산C</option>
+                  <option value="4">빨강연산D</option>
+                  <option value="5">빨강연산E</option>
+                  <option value="5">빨강연산F</option>
+                </select>
+              </div>
+              <div class="book-step">
+                <input type="radio" id="step1" name="step">
+                <input type="radio" id="step2" name="step">
+                <input type="radio" id="step3" name="step">
+                <input type="radio" id="step4" name="step">
+                <div class="step-btn">
+                  <label for="step1">A1</label>
+                  <label for="step2">A2</label>
+                  <label for="step3">A3</label>
+                  <label for="step4">A4</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="children-wrap">
+            <h3 class="children-count">자녀2</h3>
+            <div class="icon-wrap">
+              <img src="./img/b_15px/icon_close_b_15pt.png" alt="삭제">
+            </div>
+            <div class="input-01--text input-text-container">
+              <label class="input-label">학년(나이)</label>
+              <select class="drop mobile" required name="" id="">
+                <option value="" disabled selected>선택해 주세요</option>
+                <option value="1">6세</option>
+                <option value="2">7세</option>
+                <option value="3">1학년</option>
+                <option value="4">2학년</option>
+                <option value="5">3학년</option>
+              </select>
+            </div>
+            <div class="book-wrap">
+              <div class="input-01--text input-text-container">
+                <label class="input-label">교재 선택</label>
+                <select class="drop mobile" required name="" id="">
+                  <option value="" disabled selected>학습할 교재를 선택해 주세요</option>
+                  <option value="1">빨강연산A</option>
+                  <option value="2">빨강연산B</option>
+                  <option value="3">빨강연산C</option>
+                  <option value="4">빨강연산D</option>
+                  <option value="5">빨강연산E</option>
+                  <option value="5">빨강연산F</option>
+                </select>
+              </div>
+              <div class="book-step">
+                <input type="radio" id="step1" name="step">
+                <input type="radio" id="step2" name="step">
+                <input type="radio" id="step3" name="step">
+                <input type="radio" id="step4" name="step">
+                <div class="step-btn">
+                  <label for="step1">A1</label>
+                  <label for="step2">A2</label>
+                  <label for="step3">A3</label>
+                  <label for="step4">A4</label>
+                </div>
+              </div>    
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-outline-01 children-add"><img src="./img/b_1px/icon_add_b_1pt.png" alt="추가 아이콘">자녀추가</button>
+        <div class="free-event">
+          <h2 class="form-title">학습단 1기 기념 이벤트 신청</h2>
+          <div class="free-checkbox-wrap">
+            <input class="magic-checkbox" type="checkbox" name="layout" id="free">
+            <label for="free">빨강연산 1권 무료신청</label>
+          </div>
+          <div class="book-wrap">
+            <div class="input-01--text input-text-container">
+              <label class="input-label">교재 선택</label>
+              <select class="drop mobile" required name="" id="">
+                <option value="" disabled selected>신청할 교재를 선택해 주세요</option>
+                <option value="1">6세</option>
+                <option value="2">7세</option>
+                <option value="3">1학년</option>
+                <option value="4">2학년</option>
+                <option value="5">3학년</option>
+              </select>
+            </div>
+            <div class="book-step">
+              <input type="radio" id="step1" name="step">
+              <input type="radio" id="step2" name="step">
+              <input type="radio" id="step3" name="step">
+              <input type="radio" id="step4" name="step">
+              <div class="step-btn">
+                <label for="step1">A1</label>
+                <label for="step2">A2</label>
+                <label for="step3">A3</label>
+                <label for="step4">A4</label>
+              </div>
+            </div>
+          </div>
+          <div class="input-01--search input-search-container">
+            <label class="input-label">배송지 주소</label>
+            <label class="input-label-option">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="same">
+                <label for="same">회원정보 동일</label>
+            </label>
+            <div class="input-wrap">
+              <input type="search" placeholder="도로명, 지번, 건물명 검색" class="search-text">
+              <img src="./img/b_15px/icon_search_b_15pt.png" alt="검색">
+            </div>
+          </div>
+          <div class="input-01--text input-text-container">
+            <label class="input-label">수령인 이름</label>
+            <div class="input-wrap">
+              <input type="text" name="name" autocomplete="off"/>
+            </div>
+          </div>
+          <div class="input-01--number input-number-container">
+            <label class="input-label">수령인 전화번호</label>
+            <div class="input-wrap">
+              <input type="text" name="name" autocomplete="off" oninput="autoHyphen(this)" maxlength="13"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="agree">
+          <div>
+            <input class="magic-checkbox" type="checkbox" name="layout" id="agree-info">
+            <label for="agree-info">개인정보 수집•이용에 대한 동의 </label>
+          </div>
+          <button type="button" onClick="">보기</button>
+        </div>
+        <div class="cancel">신청취소하기</div>
+      </form>
+      <footer>
+        서울특별시 서초구 강남대로93길 9(잠원동) ㈜오메가포인트 | 대표이사 이충기<br/>
+        사업자등록번호: 114-86-01317 | 통신판매업신고: 서초 0331호 | 전화: 02-3446-9660 | 팩스: 02-3446-9663<br/>
+        Copyright OMEGA POINT Inc. All right reserved.
+      </footer>
+</body>
+</html>
