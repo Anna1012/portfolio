@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>시매쓰 설명회 신청</title>
+
+    <!-- 링크막기 -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <img src="./img/back.png" alt="뒤로가기" class="back" onclick="history.back()">
+            <img src="./img/logo.png" alt="시매쓰 로고" class="logo">
+        </header>
+        <div class="content">
+            <p>신청정보 입력</p>
+            <div class="info_wrap">
+                <label>학부모 이름</label>
+                <div class="input_wrap">
+                    <input type="text" placeholder="이름을 입력해 주세요.">
+                </div>
+            </div>
+            <div class="info_wrap">
+                <label>학부모 연락처</label>
+                <div class="input_wrap">
+                    <input type="phone" placeholder="‘-’빼고 입력해 주세요.">
+                </div>
+            </div>
+            <div class="info_wrap">
+                <label>지역</label>
+                <div class="input_wrap">
+                    <select name="area" id="area">
+                        <option value="" disabled selected>거주 지역을 선택해 주세요.</option>
+                        <option value="">서울</option>
+                        <option value="">경기</option>
+                        <option value="">인천</option>
+                        <option value="">세종</option>
+                        <option value="">대전</option>
+                        <option value="">충북</option>
+                        <option value="">충남</option>
+                        <option value="">강원</option>
+                        <option value="">대구</option>
+                        <option value="">경북</option>
+                        <option value="">부산</option>
+                        <option value="">울산</option>
+                        <option value="">경남</option>
+                        <option value="">광주</option>
+                        <option value="">전북</option>
+                        <option value="">전남</option>
+                        <option value="">제주</option>
+                    </select>
+                </div>
+            </div>
+            <div class="info_wrap">
+                <label>대상 학년 선택</label>
+                <div class="input_wrap">
+                    <select name="grade" id="grade">
+                        <option value="" disabled selected>대상 학년을 선택해 주세요.</option>
+                        <option value="">유치원/초등 저학년</option>
+                        <option value="">초등 고학년</option>
+                        <option value="">예비중등/중등</option>
+                    </select>
+                </div>
+            </div>
+            <div class="info_wrap">
+                <label>기타 (수학 관련 질문)</label>
+                <div class="input_wrap que">
+                    <textarea placeholder="입력해 주세요." rows="5" cols="33"></textarea>
+                </div>
+            </div>
+            <div class="info_wrap test">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="1" value="option">
+                <label for="1"></label>
+                <label class="text" for="1">
+                    (혜택 1) 무료진단 테스트 신청하기
+                </label>
+            </div>
+        </div>
+        <div class="content test">
+            <div class="info_wrap">
+                <label>학생 이름</label>
+                <div class="input_wrap">
+                    <input type="text" placeholder="이름을 입력해 주세요.">
+                </div>
+            </div>
+            <div class="info_wrap">
+                <label>나이</label>
+                <div class="input_wrap">
+                    <input type="number" placeholder="나이를 입력해 주세요.">
+                </div>
+            </div>
+            <div class="info_wrap">
+                <label>테스트 희망 센터</label>
+                <div class="input_wrap search">
+                    <input type="text" placeholder="지역 또는 센터명 검색">
+                    <img src="./img/search.png" alt="검색">
+                </div>
+            </div>
+            <div class="center_wrap">
+                <div class="center">
+                    <table>
+                        <tr>
+                            <th>[서울] 강남 대치 영재중등 시매쓰</th>
+                            <th rowspan="2">
+                                <img src="./img/checked.png" alt="선택">
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>서울시 강남구 대치동 938-22 (타워엠프리스) 3층 303호</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="center">
+                    <table>
+                        <tr>
+                            <th>[서울] 강남 대치 영재중등 시매쓰</th>
+                            <th rowspan="2">
+                            
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>서울시 강남구 대치동 938-22 (타워엠프리스) 3층 303호</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="center">
+                    <table>
+                        <tr>
+                            <th>[서울] 강남 대치 영재중등 시매쓰</th>
+                            <th rowspan="2">
+                            
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>서울시 강남구 대치동 938-22 (타워엠프리스) 3층 303호</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="center">
+                    <table>
+                        <tr>
+                            <th>[서울] 강남 대치 영재중등 시매쓰</th>
+                            <th rowspan="2">
+                            
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>서울시 강남구 대치동 938-22 (타워엠프리스) 3층 303호</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="content footerbtm">
+            <div class="btns">
+                <button class="next" onclick="location.href='./03_check.html';">
+                    다음
+                </button>
+            </div>
+            <footer>
+                <h5>서울특별시 서초구 강남대로93길 9(잠원동) ㈜오메가포인트</h5>
+                <h5>대표이사 이충기 | 사업자등록번호 114-86-01317</h5>
+                <h5>통신판매업신고 서초 0331호 전화 : 02-3446-9660</h5>
+                <h5>팩스 02-3446-9663 Copyright ⓒ 2015 OMEGA POINT Inc. All Right Reserved.</h5>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

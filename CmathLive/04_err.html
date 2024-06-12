@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    /*err page design*/
+    .errPage .errImg { width:80%; margin:0 auto; margin-top:150px;}
+    .errPage h3 { font-size:25px; margin:25px 0;}
+    .errPage { text-align: center; }
+    .errPage h6 { 
+        font-size:15px;
+        line-height:30px;
+        font-weight: 400;
+        color:rgb(167, 167, 167);
+    }
+    .errPage .button {
+        display: inline-block;
+        padding: 5px 10px;
+        font-size:15px;
+        color: #fff;
+        text-decoration: none;
+
+        transition: all 0.3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        margin-top:30px;
+    }
+    .errPage .button:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ccc;
+
+        z-index: -2;
+    }
+    .errPage .button:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #586870;
+        transition: all 0.3s;
+
+        z-index: -1;
+    }
+    .errPage .button:hover {
+        color: #fff;
+    }
+    .errPage .button:hover:before {
+        width: 100%;
+    }
+
+</style>
+<body>
+    <div class="errPage">
+        <img class="errImg" src="./img/err.png" alt="">
+        <h3>죄송합니다. 현재 찾을 수 없는 페이지를 요청하셨습니다.</h3>
+        <h6>
+            존재하지 않는 주소를 입력하셨거나,</br>
+            요청하신 페이지의 주소가 변경, 삭제되어 찾을 수 없습니다.</br>
+        </h6>
+        <div class="goMain">
+            <a href="#" class="button">메인으로 가기</a>
+        </div>
+        
+    </div>
+</body>
+</html>
