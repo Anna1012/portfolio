@@ -1,0 +1,128 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@font-face {
+    font-family: "GmarketSansBold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+}
+body, html { width:100%; }
+header {
+    height:56px;
+    display: flex;
+    align-items: center;
+}
+header img { 
+    margin:0 auto;
+    width:90px;
+    height:23px;;
+}
+header .icons { 
+    width:36px; height:36px;
+    padding:6px;
+}
+header .icons img { width:100%; }
+form {
+    padding:0 16px
+}
+.form-title {
+    height:45px;
+    line-height:45px;
+    font-size: 18px;
+    font-family: "GmarketSansBold";
+}
+
+
+.history-wrap .history {
+    min-height:90px;
+    background:rgba(247,179,49,0.08);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding:0 12px;
+    position:relative;
+    margin-bottom:10px;
+    cursor: pointer;
+}
+.history-wrap .date {
+    width:66px;
+    height:66px;
+    border-radius: 100px;
+    background:#FFEDCA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:#F7B331;
+    line-height:20px;
+}
+.history-wrap .date .year {
+    font-size: 13px;
+}
+.history-wrap .date .month {
+    font-size: 18px;
+    font-weight: 900;
+}
+.history-wrap .history-content {
+    margin-left:10px;
+    line-height: 20px;
+    width:calc(100% - 66px - 36px - 10px);
+}
+.history-wrap .history-content h3 {
+    margin-bottom:5px;
+    font-size: 16px;
+    font-weight: 900;
+}
+.history-wrap .history-content p {
+    color:#C1C1C1;
+    font-size: 13px;
+}
+.history-wrap .icon-wrap {
+    width:36px; height:36px; padding:6px;
+    position:absolute;
+    right:10px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.history-wrap .icon-wrap img {
+    width:100%;
+    height:100%;
+}
+
+
+footer {
+    color: #e4e4e4;
+    line-height:22px;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    padding:0 16px;
+    margin-top:50px;
+    text-align: center;
+    margin-bottom:80px;
+}
+
+@media (min-width: 1024px) {
+    form {
+        width:680px;
+        margin: 0 auto;
+    }
+}
+
+@media (hover: hover) {
+    .history-wrap .history:hover {
+        background:rgba(247,179,49,0.10);
+    }
+  }
