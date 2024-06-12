@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cmath Design System website</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="../script/webpage.js"></script>
+
+    <!--jquery date ui-->
+    <link rel="stylesheet" href="../style/jquery-ui.theme.min.css" />
+    <script src="../script/date.js"></script>
+
+    <link rel="stylesheet" href="../style/CmathDesignSystem.css" />
+    <link rel="stylesheet" href="../style/CmathDesignSystem_website.css" />
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+      $(function () {
+        $("#datepicker").datepicker();
+      });
+    </script>
+
+    <script src="../script/script.js"></script>
+    <script type="text/javascript">
+      // 안드로이드 우측 버튼 비활성
+      $(document).bind("contextmenu", function (e) {
+        return false;
+      });
+    </script>
+  </head>
+  <body>
+    <header class="header-top">
+      <nav class="gnb">
+        <div class="inner">
+          <ul>
+            <li><a href="#">환경 및 설정</a></li>
+            <li><a href="#">HTML 가이드</a></li>
+            <li><a href="#">CSS 가이드</a></li>
+            <li><a href="#">파일/폴더명</a></li>
+            <li><a href="#" class="on">디자인시스템</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="inner contents">
+      <header class="header-left">
+        <nav class="snb">
+          <ul>
+            <li>
+              <span OnClick="location.href='../CmathDesignSystem_webpage.html'">Logo</span>
+              <ul>
+                <li>시매쓰 로고</li>
+                <li>시매쓰 출판 로고</li>
+                <li>시매쓰 학원 로고</li>
+              </ul>
+            </li>
+            <li><span OnClick="location.href='../uxwritings/CmathDesignSystem_webpage.html'">UX Writings</span></li>
+            <li>
+              <span class="on">Colors</span>
+              <ul class="on">
+                <li class="on">시매쓰 메인 색상</li>
+                <li>시매쓰 서브 색상</li>
+                <li>다크모드</li>
+              </ul>
+            </li>
+            <li>
+              <span OnClick="location.href='../components/CmathDesignSystem_webpage.html'">Components</span>
+              <ul>
+                <li>Buttons</li>
+                <li>Dropdowns</li>
+                <li>Tabs</li>
+                <li>Form</li>
+                <li>Table</li>
+                <li>Dialog</li>
+                <li>Tag</li>
+                <li>Pagenation</li>
+                <li>Badges</li>
+              </ul>
+            </li>
+            <li><span OnClick="location.href='../typography/CmathDesignSystem_webpage.html'">Typography</span></li>
+            <li><span OnClick="location.href='../icon/CmathDesignSystem_webpage.html'">Icon</span></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="parts-container">
+        <section class="part-wrap">
+            <div class="part">
+                <div class="color-01">
+                    <h1 class="part-title-01">시매쓰 매인 색상</h1>
+                    <h5 class="part-text">시매쓰의 이미지를 대표하는 컬러입니다.  용도(인쇄, 웹)에 맞게 컬러를 사용해야하고,  지속적인 동일 색상을 사용해 시매쓰의 이미지를 구축합니다. </h5>
+                    <div class="color-wrap">
+                        <div class="cmath-red0 color-palette">
+                            <h3 class="color-name-white">cmath-red0</h3>
+                            <table class="color-info-white">
+                                <tr>
+                                    <td>CMYK</td>
+                                    <td>11&nbsp;&nbsp;99&nbsp;&nbsp;100&nbsp;&nbsp;0</td>
+                                </tr>
+                                <tr>
+                                    <td>RGB</td>
+                                    <td>230&nbsp;&nbsp;0&nbsp;&nbsp;18&nbsp;&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>E60012</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="cmath-navy1 color-palette">
+                            <h3 class="color-name-white">cmath-navy1</h3>
+                            <table class="color-info-white">
+                                <tr>
+                                    <td>CMYK</td>
+                                    <td>30&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;&nbsp;60</td>
+                                </tr>
+                                <tr>
+                                    <td>RGB</td>
+                                    <td>98&nbsp;&nbsp;122&nbsp;&nbsp;134&nbsp;&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>627A86</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-02">
+                    <h1 class="part-title-02">Brand Oriented Color Palatte</h1>
+                    <h5 class="part-text">
+                        전용 색상을 사용할 시, 적정한 비율에 맞춰 사용합니다.
+                    </h5>
+                    <div class="color-wrap">
+                        <div class="cmath-red0">
+                            <h3 class="color-name-white">cmath-red0</h3>
+                        </div>
+                        <div class="cmath-navy1">
+                            <h3 class="color-name-white">cmath-navy1</h3>
+                        </div>
+                        <div class="white">
+                            <h3 class="color-name-black">white</h3>
+                        </div>
+                        <div class="greyscale1">
+                            <h3 class="color-name-black">main-gray</h3>
+                        </div>
+                        <div class="greyscale4">
+                            <h3 class="color-name-black">sub-gray</h3>
+                        </div>
+                        <div class="black">
+                            <h3 class="color-name-white">black</h3>
+                        </div>
+                    </div>
+                    <div class="color-wrap type-2">
+                        <div class="cmath-red0">
+                            <h3 class="color-name-white">cmath-red0</h3>
+                        </div>
+                        <div class="cmath-navy1">
+                            <h3 class="color-name-white">cmath-navy1</h3>
+                        </div>
+                        <div class="white">
+                            <h3 class="color-name-black">white</h3>
+                        </div>
+                        <div class="greyscale1">
+                            <h3 class="color-name-black">main-gray</h3>
+                        </div>
+                        <div class="black">
+                            <h3 class="color-name-white">black</h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="color-03">
+                    <h1 class="part-title-02">Brand Colors</h1>
+                    <h5 class="part-text">
+                        cmathRed는 강조색(5~10%)으로, 주로 탭, 네비게이션, 라디오/체크박스에 사용합니다. <br/>
+                        cmathNavy는 보조색(25~30%)으로, 주로 버튼(확인, 다음, 완료, 저장 등), Select박스로 사용합니다.
+                    </h5>
+                    <div class="color-wrap">
+                        <div class="cmath-red0 color-palette">
+                            <h3 class="color-name-white">cmath-red0</h3>
+                            <table class="color-info-white">
+                                <tr>
+                                    <td>CMYK</td>
+                                    <td>11&nbsp;&nbsp;99&nbsp;&nbsp;100&nbsp;&nbsp;0</td>
+                                </tr>
+                                <tr>
+                                    <td>RGB</td>
+                                    <td>230&nbsp;&nbsp;0&nbsp;&nbsp;18&nbsp;&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>E60012</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="cmath-red1 color-palette">
+                            <h3 class="color-name-white">cmath-red1</h3>
+                            <table class="color-info-white">
+                                <tr>
+                                    <td>CMYK</td>
+                                    <td>6&nbsp;&nbsp;63&nbsp;&nbsp;39&nbsp;&nbsp;0</td>
+                                </tr>
+                                <tr>
+                                    <td>RGB</td>
+                                    <td>241&nbsp;&nbsp;113&nbsp;&nbsp;123</td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>F1717B</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="cmath-red2 color-palette">
+                            <h3 class="color-name-white">cmath-red2</h3>
+                            <table class="color-info-white">
+                                <tr>
+                                    <td>CMYK</td>
+                                    <td>4&nbsp;&nbsp;46&nbsp;&nbsp;22&nbsp;&nbsp;0</td>
+                                </tr>
+                                <tr>
+                                    <td>RGB</td>
+                                    <td>244&nbsp;&nbsp;167&nbsp;&nbsp;174</td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>F4A7AD</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="cmath-red3 color-palette">
+                            <h3 class="color-name-black">cmath-red3</h3>
+                            <table class="color-info-black">
+                                <tr>
+                                    <td>CMYK</td>
+                                    <td>2&nbsp;&nbsp;17&nbsp;&nbsp;7&nbsp;&nbsp;0</td>
+                                </tr>
+                                <tr>
+                                    <td>RGB</td>
+                                    <td>249&nbsp;&nbsp;225&nbsp;&nbsp;227</td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>F9E1E3</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="part">
+                <div class="color-04">
+                    <h1 class="part-title-01">시매쓰 서브 색상</h1>
+                    <h1 class="part-title-02">Success</h1>
+                    <h5 class="part-text">확인, 성공 같은 메세지에만 사용합니다.</h5>
+                    <div class="color-wrap">
+                        <div class="green0 color-palette">
+                            <h3 class="color-name-white">green0</h3>
+                            <table class="color-info-white">
+                                <tr>
+                                    <td>CMYK</td>
+                                    <td>4&nbsp;&nbsp;46&nbsp;&nbsp;22&nbsp;&nbsp;0</td>
+                                </tr>
+                                <tr>
+                                    <td>RGB</td>
+                                    <td>244&nbsp;&nbsp;167&nbsp;&nbsp;174</td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>5DCCA9</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="green1 color-palette">
+                            <h3 class="color-name-white">green1</h3>
+                            <table class="color-info-white">
+                                <tr>
+                                    <td>CMYK</td>
+                                    <td>40&nbsp;&nbsp;0&nbsp;&nbsp;28&nbsp;&nbsp;0</td>
+                                </tr>
+                                <tr>
+                                    <td>RGB</td>
+                                    <td>265&nbsp;&nbsp;227&nbsp;&nbsp;207</td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>A5E3CF</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="green2 color-palette">
+                            <h3 class="color-name-black">green2</h3>
+                            <table class="color-info-black">
+                                <tr>
+                                    <td>CMYK</td>
+                                    <td>18&nbsp;&nbsp;0&nbsp;&nbsp;12&nbsp;&nbsp;0</td>
+                                </tr>
+                                <tr>
+                                    <td>RGB</td>
+                                    <td>219&nbsp;&nbsp;244&nbsp;&nbsp;236</td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>DBF4EC</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="color-05">
+                    <h1 class="part-title-02">Fail / err</h1>
+                    <h5 class="part-text">오류, 경고, 주의, 실패와 같은 메세지에만 사용합니다. </h5>
+                    <div class="color-wrap">
+                        <div class="cmath-red1 color-palette">
+                            <h3 class="color-name-white">cmath-red1</h3>
+                            <table class="color-info-white">
+                                <tr>
+                                    <td>CMYK</td>
+                                    <td>6&nbsp;&nbsp;69&nbsp;&nbsp;39&nbsp;&nbsp;0</td>
+                                </tr>
+                                <tr>
+                                    <td>RGB</td>
+                                    <td>241&nbsp;&nbsp;113&nbsp;&nbsp;123</td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>F1717B</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="cmath-red2 color-palette">
+                            <h3 class="color-name-white">cmath-red2</h3>
+                            <table class="color-info-white">
+                                <tr>
+                                    <td>CMYK</td>
+                                    <td>4&nbsp;&nbsp;46&nbsp;&nbsp;22&nbsp;&nbsp;0</td>
+                                </tr>
+                                <tr>
+                                    <td>RGB</td>
+                                    <td>244&nbsp;&nbsp;167&nbsp;&nbsp;174</td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>A5E3CF</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="cmath-red3 color-palette">
+                            <h3 class="color-name-black">cmath-red3</h3>
+                            <table class="color-info-black">
+                                <tr>
+                                    <td>CMYK</td>
+                                    <td>18&nbsp;&nbsp;0&nbsp;&nbsp;12&nbsp;&nbsp;0</td>
+                                </tr>
+                                <tr>
+                                    <td>RGB</td>
+                                    <td>219&nbsp;&nbsp;244&nbsp;&nbsp;236</td>
+                                </tr>
+                                <tr>
+                                    <td>#</td>
+                                    <td>DBF4EC</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="color-06">
+                  <h1 class="part-title-02">Warning</h1>
+                  <h5 class="part-text">오류, 경고, 주의, 실패와 같은 메세지에만 사용합니다. </h5>
+                  <div class="color-wrap">
+                    <div class="yellow0 color-palette">
+                        <h3 class="color-name-white">yellow0</h3>
+                        <table class="color-info-white">
+                            <tr>
+                                <td>CMYK</td>
+                                <td>2&nbsp;&nbsp;21&nbsp;&nbsp;73&nbsp;&nbsp;0</td>
+                            </tr>
+                            <tr>
+                                <td>RGB</td>
+                                <td>253&nbsp;&nbsp;193&nbsp;&nbsp;78</td>
+                            </tr>
+                            <tr>
+                                <td>#</td>
+                                <td>FDC14E</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="yellow1 color-palette">
+                        <h3 class="color-name-white">yellow1</h3>
+                        <table class="color-info-white">
+                            <tr>
+                                <td>CMYK</td>
+                                <td>3&nbsp;&nbsp;18&nbsp;&nbsp;43&nbsp;&nbsp;0</td>
+                            </tr>
+                            <tr>
+                                <td>RGB</td>
+                                <td>252&nbsp;&nbsp;220&nbsp;&nbsp;158</td>
+                            </tr>
+                            <tr>
+                                <td>#</td>
+                                <td>FCDC9E</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="yellow2 color-palette">
+                        <h3 class="color-name-black">yellow2</h3>
+                        <table class="color-info-black">
+                            <tr>
+                                <td>CMYK</td>
+                                <td>1&nbsp;&nbsp;6&nbsp;&nbsp;14&nbsp;&nbsp;0</td>
+                            </tr>
+                            <tr>
+                                <td>RGB</td>
+                                <td>255&nbsp;&nbsp;245&nbsp;&nbsp;226</td>
+                            </tr>
+                            <tr>
+                                <td>#</td>
+                                <td>FFF5E2</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+              </div>
+              <div class="color-07">
+                <h1 class="part-title-02">Light Steel Blue</h1>
+                <h5 class="part-text">흰 배경과 구분이 필요할 때, 배경 컬러로 사용합니다.</h5>
+                <div class="color-wrap">
+                  <div class="steelblue0 color-palette">
+                      <h3>steelblue0</h3>
+                      <table>
+                          <tr>
+                              <td>CMYK</td>
+                              <td>13&nbsp;&nbsp;6&nbsp;&nbsp;7&nbsp;&nbsp;0</td>
+                          </tr>
+                          <tr>
+                              <td>RGB</td>
+                              <td>227&nbsp;&nbsp;234&nbsp;&nbsp;237</td>
+                          </tr>
+                          <tr>
+                              <td>#</td>
+                              <td>E3EAED</td>
+                          </tr>
+                      </table>
+                  </div>
+                  <div class="steelblue1 color-palette">
+                      <h3>steelblue1</h3>
+                      <table>
+                          <tr>
+                              <td>CMYK</td>
+                              <td>8&nbsp;&nbsp;4&nbsp;&nbsp;5&nbsp;&nbsp;0</td>
+                          </tr>
+                          <tr>
+                              <td>RGB</td>
+                              <td>239&nbsp;&nbsp;242&nbsp;&nbsp;243</td>
+                          </tr>
+                          <tr>
+                              <td>#</td>
+                              <td>EFF2F3</td>
+                          </tr>
+                      </table>
+                  </div>
+                </div>
+              </div>
+              <div class="color-08">
+                  <h1 class="part-title-02">focusBlue</h1>
+                  <h5 class="part-text">input이 focus될 때나 눈에 띄어야 하는 배지같은 요소의 포인트 컬러로 사용합니다.</h5>
+                  <div class="color-wrap">
+                    <div class="focusblue0 color-palette">
+                        <h3>focusblue0</h3>
+                        <table>
+                            <tr>
+                                <td>CMYK</td>
+                                <td>72&nbsp;&nbsp;42&nbsp;&nbsp;17&nbsp;&nbsp;0</td>
+                            </tr>
+                            <tr>
+                                <td>RGB</td>
+                                <td>82&nbsp;&nbsp;135&nbsp;&nbsp;182</td>
+                            </tr>
+                            <tr>
+                                <td>#</td>
+                                <td>5287B6</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="focusblue1 color-palette">
+                        <h3>focusblue1</h3>
+                        <table>
+                            <tr>
+                                <td>CMYK</td>
+                                <td>51&nbsp;&nbsp;28&nbsp;&nbsp;0&nbsp;&nbsp;0</td>
+                            </tr>
+                            <tr>
+                                <td>RGB</td>
+                                <td>135&nbsp;&nbsp;172&nbsp;&nbsp;231</td>
+                            </tr>
+                            <tr>
+                                <td>#</td>
+                                <td>87ACE7</td>
+                            </tr>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="color-09">
+                  <h1 class="part-title-02">Grayscale Colors</h1>
+                  <h5 class="part-text">회색은 #333, #ccc와 다음의 회색 이외의 사용을 제한합니다.</h5>
+                  <div class="color-wrap">
+                    <div class="color-palette greyscale0">
+                      <h5 class="left">greyscale0</h5>
+                      <ul class="right">
+                        <li>C0&nbsp;&nbsp;M0&nbsp;&nbsp;Y0&nbsp;&nbsp;K5</li>
+                        <li>#F7F8F8</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="color-wrap">
+                    <div class="color-palette greyscale1">
+                      <h5 class="left">greyscale1</h5>
+                      <ul class="right">
+                        <li>C0&nbsp;&nbsp;M0&nbsp;&nbsp;Y0&nbsp;&nbsp;K20</li>
+                        <li>#DCDDDD</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="color-wrap">
+                    <div class="color-palette greyscale2">
+                      <h5 class="left">greyscale2</h5>
+                      <ul class="right">
+                        <li>C0&nbsp;&nbsp;M0&nbsp;&nbsp;Y0&nbsp;&nbsp;K30</li>
+                        <li>#C9CACA</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="color-wrap">
+                    <div class="color-palette greyscale3">
+                      <h5 class="left">greyscale3</h5>
+                      <ul class="right">
+                        <li>C0&nbsp;&nbsp;M0&nbsp;&nbsp;Y0&nbsp;&nbsp;K40</li>
+                        <li>#B5B5B6</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="color-wrap">
+                    <div class="color-palette greyscale4">
+                      <h5 class="left">greyscale4</h5>
+                      <ul class="right">
+                        <li>C0&nbsp;&nbsp;M0&nbsp;&nbsp;Y0&nbsp;&nbsp;K50</li>
+                        <li>#9FA0A0</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="color-wrap">
+                    <div class="color-palette greyscale5">
+                      <h5 class="left">greyscale5</h5>
+                      <ul class="right">
+                        <li>C0&nbsp;&nbsp;M0&nbsp;&nbsp;Y0&nbsp;&nbsp;K60</li>
+                        <li>#898989</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="color-wrap">
+                    <div class="color-palette greyscale6">
+                      <h5 class="left">greyscale6</h5>
+                      <ul class="right">
+                        <li>C0&nbsp;&nbsp;M0&nbsp;&nbsp;Y0&nbsp;&nbsp;K80</li>
+                        <li>#595757</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="color-wrap">
+                    <div class="color-palette greyscale7">
+                      <h5 class="left">greyscale7</h5>
+                      <ul class="right">
+                        <li>C0&nbsp;&nbsp;M0&nbsp;&nbsp;Y0&nbsp;&nbsp;K90</li>
+                        <li>#3E3A39</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="color-wrap">
+                    <div class="color-palette greyscale8">
+                      <h5 class="left">greyscale8</h5>
+                      <ul class="right">
+                        <li>C0&nbsp;&nbsp;M0&nbsp;&nbsp;Y0&nbsp;&nbsp;K90</li>
+                        <li>#3E3A39</li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="part">
+                <div class="color-10">
+                  <h1 class="part-title-01">Dark Mode</h1>
+                  <h1 class="part-title-02">Semantic Color</h1>
+                  <h5 class="part-text">사용되는 목적과 UI에 적용되는 상황에 따라 네이밍을 한 컬러입니다. 적절하게 사용하여 UX에 혼돈이 되지 않도록 합니다.</h5>
+                 
+                  <div class="semantic-color">
+                    <div class="semantic-color-wrap light">
+
+                      <div class="semantic-color-palette semantic-background">
+                        <h5 class="left">background</h5>
+                        <ul>
+                          <li>C0&nbsp;&nbsp;M0&nbsp;&nbsp;Y0&nbsp;&nbsp;K0</li>
+                          <li>#FFFFFF</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-radio-button">
+                        <h5 class="left">radio-button</h5>
+                        <ul>
+                          <li>C0&nbsp;&nbsp;M0&nbsp;&nbsp;Y0&nbsp;&nbsp;K0</li>
+                          <li>#FFFFFF</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-navigation-background">
+                        <h5 class="left">navigation-background</h5>
+                        <ul>
+                          <li>C0&nbsp;&nbsp;M0&nbsp;&nbsp;Y0&nbsp;&nbsp;K0</li>
+                          <li>#FFFFFF</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-box-disabled">
+                        <h5 class="left">box-disabled</h5>
+                        <ul>
+                          <li>C23&nbsp;&nbsp;M17&nbsp;&nbsp;Y17&nbsp;&nbsp;K20</li>
+                          <li>#E0E0E0</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-text-disabled">
+                        <h5 class="left">text-disabled</h5>
+                        <ul>
+                          <li>C7&nbsp;&nbsp;M5&nbsp;&nbsp;Y5&nbsp;&nbsp;K0</li>
+                          <li>#F7F7F7</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-active">
+                        <h5 class="left">active</h5>
+                        <ul>
+                          <li>C7&nbsp;&nbsp;M3&nbsp;&nbsp;Y2&nbsp;&nbsp;K0</li>
+                          <li>#F1F5F8</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-input-grey">
+                        <h5 class="left">input-grey</h5>
+                        <ul>
+                          <li>C25&nbsp;&nbsp;M18&nbsp;&nbsp;Y18&nbsp;&nbsp;K0</li>
+                          <li>#C9CACA</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-navigation-grey">
+                        <h5 class="left">navigation-grey</h5>
+                        <ul>
+                          <li>C44&nbsp;&nbsp;M35&nbsp;&nbsp;Y33&nbsp;&nbsp;K0</li>
+                          <li>#9FA0A0</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-subtext">
+                        <h5 class="left">subtext</h5>
+                        <ul>
+                          <li>C24&nbsp;&nbsp;M18&nbsp;&nbsp;Y17&nbsp;&nbsp;K0</li>
+                          <li>#CCCCCC</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-line">
+                        <h5 class="left">line</h5>
+                        <ul>
+                          <li>C7&nbsp;&nbsp;M5&nbsp;&nbsp;Y5&nbsp;&nbsp;K0</li>
+                          <li>#F1F1F1</li>
+                        </ul>
+                      </div>
+                      
+                    </div>
+
+                    <div class="semantic-color-wrap dark">
+
+                      <div class="semantic-color-palette semantic-background">
+                        <ul>
+                          <li>C87&nbsp;&nbsp;M80&nbsp;&nbsp;Y78&nbsp;&nbsp;K65</li>
+                          <li>#171B1C</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-radio-button">
+                        <ul>
+                          <li>C80&nbsp;&nbsp;M75&nbsp;&nbsp;Y73&nbsp;&nbsp;K49</li>
+                          <li>#2E2E2E</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-navigation-background">
+                        <ul>
+                          <li>C89&nbsp;&nbsp;M83&nbsp;&nbsp;Y82&nbsp;&nbsp;K72</li>
+                          <li>#0E1011</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-box-disabled">
+                        <ul>
+                          <li>C78&nbsp;&nbsp;M70&nbsp;&nbsp;Y67&nbsp;&nbsp;K33</li>
+                          <li>#3D4142</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-text-disabled">
+                        <ul>
+                          <li>C68&nbsp;&nbsp;M58&nbsp;&nbsp;Y55&nbsp;&nbsp;K5</li>
+                          <li>#646768</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-active">
+                        <ul>
+                          <li>C80&nbsp;&nbsp;M75&nbsp;&nbsp;Y73&nbsp;&nbsp;49</li>
+                          <li>#2E2E2E</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-input-grey">
+                        <ul>
+                          <li>C68&nbsp;&nbsp;M75&nbsp;&nbsp;Y73&nbsp;&nbsp;K8</li>
+                          <li>#636363</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-navigation-grey">
+                        <ul>
+                          <li>C63&nbsp;&nbsp;M54&nbsp;&nbsp;Y51&nbsp;&nbsp;K1</li>
+                          <li>#737373</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-subtext">
+                        <ul>
+                          <li>C49&nbsp;&nbsp;M40&nbsp;&nbsp;Y38&nbsp;&nbsp;K0</li>
+                          <li>#929292</li>
+                        </ul>
+                      </div>
+
+                      <div class="semantic-color-palette semantic-line">
+                        <ul>
+                          <li>C78&nbsp;&nbsp;M73&nbsp;&nbsp;Y70&nbsp;&nbsp;K41</li>
+                          <li>#383838</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
