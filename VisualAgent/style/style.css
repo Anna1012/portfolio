@@ -1055,9 +1055,9 @@ input.tab-input { display: none; }
     align-items: center;
 }
 
-.page-06 .logo-wrap .logo li { width:140px; }
+.page-06 .logo-wrap .logo li { height:22px; }
 .page-06 .logo-wrap .logo li img { 
-    width:100%;
+    height:100%;
     
 }
 /* page-07 */
