@@ -1055,9 +1055,10 @@ input.tab-input { display: none; }
     align-items: center;
 }
 
-.page-06 .logo-wrap .logo li { height:22px; }
+.page-06 .logo-wrap .logo li { width:110px; }
 .page-06 .logo-wrap .logo li img { 
-    height:100%;
+    width:95%;
+    max-height: 22px;
     
 }
 /* page-07 */
