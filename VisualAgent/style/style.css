@@ -1044,7 +1044,7 @@ input.tab-input { display: none; }
     display: flex;
     align-items: center;
     animation:slideLeft 30s linear infinite;
-    gap:40px;
+    gap:30px;
 }
 .page-06 .logo-wrap {
     margin-top:20px;
@@ -1058,7 +1058,6 @@ input.tab-input { display: none; }
 .page-06 .logo-wrap .logo li { width:110px; }
 .page-06 .logo-wrap .logo li img { 
     width:95%;
-    max-height: 22px;
     
 }
 /* page-07 */
