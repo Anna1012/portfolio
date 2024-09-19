@@ -234,6 +234,7 @@ input.tab-input { display: none; }
     max-width:1490px;
     position:relative;
     padding:0 50px;
+    overflow: hidden;
 }
 .title { 
     text-align: center;
@@ -621,9 +622,10 @@ input.tab-input { display: none; }
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height:20px;
+    line-height:17px;
     flex-grow: 1;
     max-width: 480px;
+    font-size: 14px;
  }
 
 
@@ -660,7 +662,7 @@ input.tab-input { display: none; }
     text-align: left;
     width:100%;
     max-width: 1490px;
-    padding:56px 50px 0;
+    padding:56px 20px 0;
 }
 .page-03 .navy-wrap { 
     height:660px;
@@ -890,7 +892,7 @@ input.tab-input { display: none; }
 }
 .page-04 .title-table td {
     vertical-align : top;
-    font-size:12px;
+    font-size:13px;
     line-height:16px;
 }
 .page-04 .title-table .sub-title {
@@ -945,8 +947,8 @@ input.tab-input { display: none; }
     text-align: center;
     width:100%;
     color:#A5A5A5;
-    font-size: 10px;
-    line-height:22px;
+    font-size: 12px;
+    line-height:16px;
     z-index: 3;
 }
 .page-04 .procedure-image .em ul {
@@ -1273,6 +1275,8 @@ input.tab-input { display: none; }
     .page-02 .service-content li.result { width:76%; }
     .page-02 .difference .content { height:auto; padding:10px 20px;}
     .page-02 .difference { margin-top: 110px; }
+    .page-02 .difference-mobile .content { padding:10px 15px; }
+
 
     label.tab { margin-bottom:5px; }
     .page-04 .title-table tr:nth-child(2) td:nth-child(1) { margin-bottom: 6px; }
