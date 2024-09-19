@@ -239,14 +239,14 @@ input.tab-input { display: none; }
     text-align: center;
     font-weight: 800;
     color:var(--navy-color);
-    font-size: 26px;
-    line-height: 31px;
+    font-size: 20px;
+    line-height: 24px;
     padding-top: 56px;
 }
 .sub-text { 
     text-align: center;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 15px;
+    line-height: 20px;
     margin-top: 6px;
  }
  .content-title { 
@@ -256,6 +256,7 @@ input.tab-input { display: none; }
     position: relative;
     font-weight: 600;
     margin-top: 50px;
+    font-size: 13px;
   }
   .content-title span {
     display: block;
@@ -271,6 +272,7 @@ input.tab-input { display: none; }
   .discription {
     font-size: 15px;
     margin-top: 10px;
+    line-height: 20px;
   }
 
 
@@ -312,10 +314,10 @@ input.tab-input { display: none; }
 }
 .title-text-wrap p {
     color:var(--white-color);
-    margin-top: 45px;
+    margin-top: 60px;
     font-size: 17px;
-    font-weight: 300;
-    line-height: 20px;
+    font-weight: 200;
+    line-height: 23px;
     width:50%;
 }
 .title-text-wrap .service {
@@ -552,7 +554,7 @@ input.tab-input { display: none; }
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 600;
     background:var(--white-color);
     position: relative;
@@ -578,7 +580,7 @@ input.tab-input { display: none; }
     color:#9DCB11;
     transform: translateX(-50%);
     line-height:18px;
-    width:80%;
+    width:130%;
     text-align: center;
  }
  .page-02 .service-content li.result::before {
@@ -888,6 +890,8 @@ input.tab-input { display: none; }
 }
 .page-04 .title-table td {
     vertical-align : top;
+    font-size:12px;
+    line-height:16px;
 }
 .page-04 .title-table .sub-title {
  color:#B8B8B8;
@@ -936,12 +940,12 @@ input.tab-input { display: none; }
 .page-04 .procedure-image .display-show ul {
     position: absolute;
     left:50%;
-    top:-105px;
+    top:-103px;
     transform: translateX(-50%);
     text-align: center;
     width:100%;
     color:#A5A5A5;
-    font-size: 15px;
+    font-size: 10px;
     line-height:22px;
     z-index: 3;
 }
@@ -951,21 +955,21 @@ input.tab-input { display: none; }
 }
 
 .page-04 .procedure-image .display-show ul .point {
-    width:14px;
-    height:14px;
+    width:10px;
+    height:10px;
     background:var(--navy-color);
     border-radius: 100px;
     box-shadow: 0 0 0 6px rgba(5,46,94,0.15);
     margin:0 auto;
 }
 .page-04 .procedure-image .em ul .point {
-    width:34px;
-    height:34px;
+    width:20px;
+    height:20px;
     background: #329CF2;
     box-shadow: none;
-    margin-top: -10px;
+    margin-top: -6px;
 }
-.page-04 .procedure-image .display-show ul p { margin-top:16px; }
+.page-04 .procedure-image .display-show ul p { margin-top:8px; }
 .page-04 .procedure-image .em ul p { margin-top:7px; }
 .page-04 .procedure-image .display-show span {
      width: 84%;
@@ -999,6 +1003,7 @@ input.tab-input { display: none; }
 .page-04 .using .sample ul li {
     width:100px;
     text-align: right;
+    font-size: 12px;
     
 }
 .page-04 .using .sample ul li:first-child {
@@ -1023,10 +1028,11 @@ input.tab-input { display: none; }
     
 }
 .page-04 .using .hospital-text {
-    font-size:17px;
+    font-size:13px;
     color:#848484;
-    line-height:22px;
+    line-height:18px;
     margin-bottom:12px;
+    margin-top: 6px;
 }
 
 
@@ -1068,7 +1074,7 @@ input.tab-input { display: none; }
 }
 .page-07 .graph-wrap:last-child { margin-bottom: 0; }
 .page-07 .graph-wrap [class*="hospital-"] h4 {
-    font-size: 26px;
+    font-size: 20px;
     line-height:35px;
     color:var(--navy-color);
     font-weight: 800;
@@ -1076,11 +1082,19 @@ input.tab-input { display: none; }
 .page-07 .graph-wrap [class*="hospital-"] ul {
     display: flex;
     gap:10px;
+    font-size: 10px;
+    align-items: center;
 }
 .page-07 .graph-wrap [class*="hospital-"] { 
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.page-07 .graph-wrap [class*="hospital-"] ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
 }
 .page-07 .graph-wrap [class*="hospital-"] ul span {
     display: inline-block;
@@ -1189,7 +1203,7 @@ input.tab-input { display: none; }
       .figure-wrap .figure-03 { left:23%; }
       .figure-wrap .figure-06 { top:250px; }
       .page-02 .service-content .round-wrap { font-size:20px; }
-      .page-02 .service-content .round-wrap p { font-size:20px; padding:0 18px;}
+      .page-02 .service-content .round-wrap p { font-size:15px; padding:0 18px;}
       .page-03 .layout { flex-wrap: wrap; }
       .page-03 .layout li { width:calc(50% - 11px); }
       .page-03 .layout li { padding-top:0; }
@@ -1252,8 +1266,8 @@ input.tab-input { display: none; }
         top:-50%;
         transform:translateY(-50%);
         width:160px;
-        font-size: 15px;
-        line-height:22px;
+        font-size: 12px;
+        line-height:18px;
     }
     .page-02 .service-content li.arrow img { transform: rotate(90deg); }
     .page-02 .service-content li.result { width:76%; }
@@ -1261,8 +1275,9 @@ input.tab-input { display: none; }
     .page-02 .difference { margin-top: 110px; }
 
     label.tab { margin-bottom:5px; }
-    .title-table tr:nth-child(2){ display:inline-grid; }
-    .page-04 .title-table tr:nth-child(2) td:nth-child(2) { padding:0; }
+    .page-04 .title-table tr:nth-child(2) td:nth-child(1) { margin-bottom: 6px; }
+    .title-table tr:nth-child(2){ display:inline-grid;}
+    .page-04 .title-table tr:nth-child(2) td:nth-child(2) { padding:0; width:100%; }
     .page-04 .procedure-image { margin:160px 0 50px; }
     .page-wrap:has(.procedure-image) { padding:0; }
     .page-04 .using { 
